@@ -5,9 +5,12 @@ public class App {
         Library.addNewBook(childrensBook1);
         Library.addNewBook(childrensBook2);
         childrensBook2.updateAvailableCopies(4);
+        //Library.displayAllBooks();
+        Magazine vogueMagazine1 = new Magazine("Vogue Magazine", "Vogue", "979-05-287-251", 2025, 30, 501, "May");
+        Library.addNewBook(vogueMagazine1);
         Library.displayAllBooks();
-
-
+        System.out.println(childrensBook1.toString());
+        System.out.println(vogueMagazine1.toString());
 
     }
 }

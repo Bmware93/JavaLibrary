@@ -1,11 +1,7 @@
 import java.util.ArrayList;
 
 public class Library {
-    private static ArrayList<Book> books;
-
-    public Library() {
-        books = new ArrayList<>();
-    }
+    private static ArrayList<Book> books = new ArrayList<>();
 
     public static void addNewBook(Book book) {
         books.add(book);
@@ -19,7 +15,7 @@ public class Library {
     }
     public static void displayAllBooks() {
         for (Book book : books) {
-            book.printBookDetails();
+            book.printDetails();
             System.out.println("-------------------------");
         }
     }
