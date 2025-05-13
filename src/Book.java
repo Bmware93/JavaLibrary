@@ -44,11 +44,7 @@ public class Book {
     public boolean isAvailable() {
         return availableCopies > 0;
     }
-    public void checkoutBook(Book book) {
-         if(book.isAvailable()) {
-            book.availableCopies -= 1;
-         }
-    }
+   
 }
 
 

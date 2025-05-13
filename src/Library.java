@@ -19,4 +19,11 @@ public class Library {
             System.out.println("-------------------------");
         }
     }
+    public void checkoutBook(Book book) {
+        if(book.isAvailable()) {
+            int bookCount = book.getAvailableCopies();
+           bookCount -= 1;
+           book.updateAvailableCopies(bookCount);
+        }
+   }
 }

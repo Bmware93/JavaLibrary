@@ -1,3 +1,4 @@
+
 public class Magazine extends Book {
     private int issueNumber;
     private String releaseMonth;
